@@ -1,8 +1,8 @@
 # TODO : 1. There are two players in the game. Initialize their names as string
 # Add you code of TODO 1 here
 
-player1 = input("Insert player1 name:")
-player2 = input("Insert player2 name:")
+player1 = input("Insert player1 name: ")
+player2 = input("Insert player2 name: ")
 
 # TODO : 2. There are two layers in the sea. Initialize the integer variable layer
 # Add you code of TODO 2 here
@@ -62,4 +62,4 @@ print(welmes)
 # Add you code of TODO 9 here
 
 coor = input("Enter coordinates: ")
-print("Hit at area centering " + coor)
+print("Hit at area centering " + coor.upper())
