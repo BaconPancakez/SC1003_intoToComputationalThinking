@@ -48,7 +48,6 @@ x, y, orientation = 11, 3, 'diagonal'
 
 # TODO : 4. Validate user input for coordinates and orientation
 # Copy your code of TODO 3 here to test on x, y, orientation = 11, 3, 'diagonal'
-
 if ((1 <= x <= board_size and 1 <= y <= board_size)) and orientation in valid_orientations:
     valid = True
 else:
@@ -83,7 +82,6 @@ print(f"Coordinates ({x}, {y}, {ship_length}, {orientation}) are valid: {valid}"
 x, y, ship_length, orientation = 7, 7, 4, 'vertical'
 # TODO : 6. Validate the placement of a ship
 # Copy your code of TODO 5 here to test on x, y, ship_length, orientation = 7, 7, 4, 'vertical'
-
 if orientation.lower() == 'horizontal':
     if (1 <= (x + ship_length) <= board_size and 1 <= y <= board_size):
         valid = True
