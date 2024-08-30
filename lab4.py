@@ -26,4 +26,4 @@ while not valid_input:
 for r in range(board_size):
     for c in range(board_size):
         print(board[r][c], end=" ")
-    print()  # Move to the next line after each row
+    print() 
