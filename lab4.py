@@ -14,9 +14,7 @@ while not valid_input:
     if 0 <= row < board_size and 0 <= col < board_size:
         valid_input = True
         print(f"Coordinates ({row}, {col}) are valid: {valid_input}")
-        
         board[row][col] = 1
-        
     else:
         print(f"Coordinates ({row}, {col}) are valid: {valid_input}")
         print("Please enter again")
