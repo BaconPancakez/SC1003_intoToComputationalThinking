@@ -22,7 +22,6 @@ while not valid_input:
 #4 – Iteration
 # TODO : 3. For loop to iterate through each row and column of the board
 # Add you code of TODO 3 here
-# TODO: 3. For loop to iterate through each row and column of the board
 for r in range(board_size):
     for c in range(board_size):
         print(board[r][c], end=" ")
