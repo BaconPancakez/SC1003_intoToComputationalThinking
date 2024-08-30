@@ -5,7 +5,6 @@ board_size = 10
 valid_orientations = ['horizontal', 'vertical']
 valid = False
 
-
 # Exercise 1: Basic Conditional Statements
 x, y = 5, 8
 # TODO : 1. Check if coordinates are within the valid range
@@ -27,9 +26,6 @@ else:
     valid = False
 
 print(f"Coordinates ({x}, {y}) are valid: {valid}")
-
-
-
 
 # Exercise 2: Conditional with Logical Operators
 x, y, orientation = 4, 6, 'horizontal'
@@ -54,10 +50,6 @@ else:
     valid = False
 
 print(f"Coordinates ({x}, {y}, {orientation}) are valid: {valid}")
-
-
-
-
 
 # Exercise 3: Nested Conditionals
 x, y, ship_length, orientation = 3, 5, 4, 'horizontal'
