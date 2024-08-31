@@ -6,7 +6,7 @@ board = [[0 for i in range(board_size)] for j in range(board_size)]
 # TODO : 2.While loop to repeatedly ask for valid attack coordinates
 # Add you code of TODO 2 here
 valid_input = False
-while not valid_input:
+while valid_input == False:
     row = int(input(f"Enter attack row (0-{board_size-1}): "))
     col = int(input(f"Enter attack column (0-{board_size-1}): "))
     
