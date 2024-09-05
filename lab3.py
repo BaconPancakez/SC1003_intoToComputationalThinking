@@ -6,7 +6,7 @@ valid = False
 x, y = 5, 8
 # TODO : 1. Check if coordinates are within the valid range
 # Add you code of TODO 1 here
-if (1 <= x <= board_size and 1 <= y <= board_size):
+if (1 <= x <= board_size and  1 <= y <= board_size):
     valid = True
 else:
     valid = False
