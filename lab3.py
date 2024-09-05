@@ -1,6 +1,3 @@
-from tabnanny import check
-from tkinter import Y
-
 board_size = 10
 valid_orientations = ['horizontal', 'vertical']
 valid = False
@@ -29,6 +26,7 @@ print(f"Coordinates ({x}, {y}) are valid: {valid}")
 
 # Exercise 2: Conditional with Logical Operators
 x, y, orientation = 4, 6, 'horizontal'
+orientation = orientation.lower()
 
 # TODO : 3. Validate user input for coordinates and orientation
 # Add you code of TODO 3 here
@@ -41,6 +39,7 @@ print(f"Coordinates ({x}, {y}, {orientation}) are valid: {valid}")
 
 #One more example
 x, y, orientation = 11, 3, 'diagonal'
+orientation = orientation.lower()
 
 # TODO : 4. Validate user input for coordinates and orientation
 # Copy your code of TODO 3 here to test on x, y, orientation = 11, 3, 'diagonal'
@@ -53,14 +52,16 @@ print(f"Coordinates ({x}, {y}, {orientation}) are valid: {valid}")
 
 # Exercise 3: Nested Conditionals
 x, y, ship_length, orientation = 3, 5, 4, 'horizontal'
+orientation = orientation.lower()
+
 # TODO : 5. Validate the placement of a ship
 # Add you code of TODO 5 here
-if orientation.lower() == 'horizontal':
+if orientation == 'horizontal':
     if (1 <= (x + ship_length) <= board_size and 1 <= y <= board_size):
         valid = True
     else:
         valid = False
-elif orientation.lower() == 'vertical':
+elif orientation == 'vertical':
     if (1 <= x <= board_size and 1 <= (y + ship_length) <= board_size):
         valid = True
     else:
@@ -72,14 +73,16 @@ print(f"Coordinates ({x}, {y}, {ship_length}, {orientation}) are valid: {valid}"
 
 #One more example
 x, y, ship_length, orientation = 7, 7, 4, 'vertical'
+orientation = orientation.lower()
+
 # TODO : 6. Validate the placement of a ship
 # Copy your code of TODO 5 here to test on x, y, ship_length, orientation = 7, 7, 4, 'vertical'
-if orientation.lower() == 'horizontal':
+if orientation == 'horizontal':
     if (1 <= (x + ship_length) <= board_size and 1 <= y <= board_size):
         valid = True
     else:
         valid = False
-elif orientation.lower() == 'vertical':
+elif orientation == 'vertical':
     if (1 <= x <= board_size and 1 <= (y + ship_length) <= board_size):
         valid = True
     else:
