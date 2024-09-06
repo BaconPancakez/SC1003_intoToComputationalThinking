@@ -69,7 +69,7 @@ def place_ship(ship_name):
             col = ship["coord_y"]
             if col + length <= board_size:
                 for i in range(length):
-                    board[row][col+i] = 's'
+                    board[row][col+i] = ship_name[0]
             else:
                 print(f"{ship_name} unable to placed at the given position")
             
