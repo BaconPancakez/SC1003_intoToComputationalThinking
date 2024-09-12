@@ -1,3 +1,5 @@
+#SC1003 - Week 6 Lab
+
 board_size = 10
 # Get the start position for the Carrier
 print("Please enter start_position of Carrier in the following format (row,col). E.g. 6,4")

@@ -1,3 +1,5 @@
+#SC1003 - Week 5 Lab
+
 board_size = 10
 # TODO : 1. Initialize a board_sizexboard_size game board with allncells set to 0 (empty)
 # Add you code of TODO 1 here
