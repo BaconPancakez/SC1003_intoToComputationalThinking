@@ -53,10 +53,11 @@ while valid_input == False:
 # Function to create a ship and add it to the ships list
 def create_ship(name, length, row, col):
     return {"name": name, "length": length, "coord_x": row, "coord_y": col}
-
+name = ("Submarine","Carrier")
+size = (3,4)
 ships = []
-ships.append(create_ship("Submarine", 3, row_s, col_s))
-ships.append(create_ship("Carrier", 4, row_c, col_c))
+ships.append(create_ship(name[0], size[0], row_s, col_s))
+ships.append(create_ship(name[1], size[1], row_c, col_c))
 
 #print(ships)
 
