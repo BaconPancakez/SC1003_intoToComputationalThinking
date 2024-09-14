@@ -55,8 +55,8 @@ def create_ship(name, length, row, col):
     return {"name": name, "length": length, "coord_x": row, "coord_y": col}
 name = ("Submarine","Carrier")
 size = (3,4)
-ships = []
-ships.append(create_ship(name[0], size[0], row_s, col_s))
+ships = [] #List 
+ships.append(create_ship(name[0], size[0], row_s, col_s)) #append dictionary into list
 ships.append(create_ship(name[1], size[1], row_c, col_c))
 
 #print(ships)
