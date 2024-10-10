@@ -1,12 +1,10 @@
 #SC1003 - Week 6 Lab
-
 board_size = 10
 # Get the start position for the Carrier
 print("Please enter start_position of Carrier in the following format (row,col). E.g. 6,4")
-
 user_input_c = input("Enter coordinates: ") 
 # TODO : 1. Split the string at the comma and convert to a tuple of integers
-# Add you code of TODO 1 here
+# Add you code of TODO 1 here    
 valid_input = False
 while valid_input == False:
     array_c = user_input_c.split(',')
