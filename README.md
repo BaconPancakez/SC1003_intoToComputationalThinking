@@ -2,5 +2,5 @@
 
 Introduction to Computational Thinking and Programming <br />
 Tutorial <br />
-Lab - Topic: Battleship <br />
-Lab 6 - 1A2B (Bulls & Cows) game.
+Lab 2 - 5: Topic: Battleship <br />
+Lab 6: 1A2B (Bulls & Cows) game.
