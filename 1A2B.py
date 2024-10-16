@@ -1,79 +1,81 @@
 import random
+
 WIDTH = 4
 numList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
 ############################################################
 # functionality: randomly generate the target number
 # input:
-#   numList: the list with 10 digits
+#   numList: the list with the digits to use
 #   count: the number of digits to generate
-# output: a list with four digits (integers)
+# output: a list with count digits (integers)
 
 
 def genNumbers(numList, count):
-
-    ## TODO ##
-    # Shuffle the numList and return the shuffled list
-    numbers = []
     random.shuffle(numList)
+    numbers = []
 
-    for i in range(4):
+    for i in range(count):
         numbers.append(numList[i])
+
     return numbers
 ############################################################
 
 ############################################################
-# functionality: obtain the guessing from users
+# functionality: obtain the guess from the user
 # input: None
 # output: a list with four digits (integers)
 
 
 def userGuess():
+
     inputStr = input("Please input 4 digits: ")
-## TODO ##
-# Check user input and ensure user entered correct  ## datatype and length of input.
+    while inputStr.isdigit() == False or len(inputStr) != WIDTH:
+        inputStr = input("Wrong format!! Please input 4 digits: ")
+
     guess = []
-    while len(inputStr) != 4 or not inputStr.isdigit():
-        print("Wrong format!! Please input exactly 4 digits.")
-        inputStr = input("Please input 4 digits: ")
-    ## TODO ##
-    # Transfer the user input to guess list.
-    for i in range(4):
-        guess.append(int(inputStr[i]))  # Convert and append each digit
+
+    for i in range(WIDTH):
+        num = int(inputStr[i])
+        guess.append(num)
+
     return guess
 ############################################################
 
 ############################################################
-# functionality: compare the user guessing with the target
+# functionality: compare the user guess with the target
 # input:
-# guessList: the list of four digits (user guessing) #   answerList: the list of four digits (target)
+#   guessList: the list of four digits (user guess)
+#   answerList: the list of four digits (target)
 # output: a tuple (#A, #B)
 
 
 def checkGuess(guessList, answerList):
-    ## TODO ##
-    # Check how many correct number entered by the user
-    # and return the count (bulls, cows).
-    answer = list(answerList)
     bulls = 0
     cows = 0
-    for i in range(len(answer)):
-        if guessList[i] == answer[i]:
-            bulls += 1
-        else:
-            if guessList[i] in answer:
-                cows += 1
+
+    for i in range(len(guessList)):
+
+        for j in range(len(answerList)):
+
+            if guessList[i] == answerList[j]:
+                if i == j:
+                    bulls += 1
+                else:
+                    cows += 1
+
     return (bulls, cows)
 ############################################################
 
 ############################################################
-# Main program putting all function together
+# Main program putting all functions together
 
 
 answer = genNumbers(numList, WIDTH)
-print(answer)  # UNCOMMENT THIS TO SEE WHAT WAS THE  ## SHUFFLED LIST
+# print(answer)
 
 attemps = 0
+
 while True:
     guesses = userGuess()
     attemps += 1
@@ -81,6 +83,7 @@ while True:
 
     result = checkGuess(guesses, answer)
     # print(result)
+
     if result[0] == 4:
         print("You Win!!")
         print("Attemps: ", attemps)

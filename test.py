@@ -1,4 +1,4 @@
-##https://programsolve.com/python-to-draw-sakura-tree-with-source-code/
+# https://programsolve.com/python-to-draw-sakura-tree-with-source-code/
 '''
 Python Program to Create Digital Clock
 '''
@@ -11,6 +11,7 @@ from time import sleep
 
 static_turtle = turtle.Turtle()
 frame = turtle.Screen()
+
 
 def tree(branch_len, inner_turtle):
     if branch_len > 3:
@@ -42,6 +43,7 @@ def tree(branch_len, inner_turtle):
         inner_turtle.backward(branch_len)
         inner_turtle.down()
 
+
 def petal(maxim, inner_turtle):
     for i in range(maxim):
         right_branch = 300 - 500 * random.random()
@@ -57,6 +59,7 @@ def petal(maxim, inner_turtle):
         inner_turtle.backward(right_branch)
         inner_turtle.right(90)
         inner_turtle.backward(left_branch)
+
 
 if __name__ == '__main__':
     static_turtle = turtle.Turtle()

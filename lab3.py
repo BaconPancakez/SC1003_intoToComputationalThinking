@@ -6,14 +6,14 @@ valid = False
 x, y = 5, 8
 # TODO : 1. Check if coordinates are within the valid range
 # Add you code of TODO 1 here
-if (1 <= x <= board_size and  1 <= y <= board_size):
+if (1 <= x <= board_size and 1 <= y <= board_size):
     valid = True
 else:
     valid = False
 
 print(f"Coordinates ({x}, {y}) are valid: {valid}")
 
-#One more example
+# One more example
 x, y = 10, -1
 # TODO : 2. Check if coordinates are within the valid range
 # Copy your code of TODO 1 here to test on x, y = 10, -1
@@ -37,7 +37,7 @@ else:
 
 print(f"Coordinates ({x}, {y}, {orientation}) are valid: {valid}")
 
-#One more example
+# One more example
 x, y, orientation = 11, 3, 'diagonal'
 orientation = orientation.lower()
 
@@ -69,9 +69,10 @@ elif orientation == 'vertical':
 else:
     valid = False
 
-print(f"Coordinates ({x}, {y}, {ship_length}, {orientation}) are valid: {valid}")
+print(f"Coordinates ({x}, {y}, {ship_length}, {
+      orientation}) are valid: {valid}")
 
-#One more example
+# One more example
 x, y, ship_length, orientation = 7, 7, 4, 'vertical'
 orientation = orientation.lower()
 
@@ -90,4 +91,5 @@ elif orientation == 'vertical':
 else:
     valid = False
 
-print(f"Coordinates ({x}, {y}, {ship_length}, {orientation}) are valid: {valid}")
+print(f"Coordinates ({x}, {y}, {ship_length}, {
+      orientation}) are valid: {valid}")

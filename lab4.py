@@ -1,4 +1,4 @@
-#SC1003 - Week 5 Lab
+# SC1003 - Week 5 Lab
 
 board_size = 10
 # TODO : 1. Initialize a board_sizexboard_size game board with allncells set to 0 (empty)
@@ -11,7 +11,7 @@ valid_input = False
 while valid_input == False:
     row = int(input(f"Enter attack row (0-{board_size-1}): "))
     col = int(input(f"Enter attack column (0-{board_size-1}): "))
-    
+
     # Validate the coordinates
     if 0 <= row < board_size and 0 <= col < board_size:
         valid_input = True
@@ -21,10 +21,10 @@ while valid_input == False:
         print(f"Coordinates ({row}, {col}) are valid: {valid_input}")
         print("Please enter again")
 
-#4 – Iteration
+# 4 – Iteration
 # TODO : 3. For loop to iterate through each row and column of the board
 # Add you code of TODO 3 here
 for r in range(board_size):
     for c in range(board_size):
         print(board[r][c], end=" ")
-    print() 
+    print()

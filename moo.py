@@ -1,4 +1,4 @@
-#remember to install the cowsay pip - pip3/pip install cowsay
+# remember to install the cowsay pip - pip3/pip install cowsay
 import cowsay
 
 name = input("What's your name? ")
