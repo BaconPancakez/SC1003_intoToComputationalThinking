@@ -1,4 +1,4 @@
-# Introduction to Computational Thinking and Programming
+# SC1003 - Introduction to Computational Thinking and Programming
 
 This repository contains Python implementations of various exercises and mini-projects designed to develop computational thinking skills, including decomposition, pattern recognition, and algorithm design.
 
