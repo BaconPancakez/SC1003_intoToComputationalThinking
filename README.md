@@ -103,7 +103,7 @@ Prerequisites
 
 Installation
 
-1. Clone this repository:
+1. Clone this repository: <br>
    git clone https://github.com/BaconPancakez/SC1003_intoToComputationalThinking <br>
    cd SC1003_intoToComputationalThinking
 
