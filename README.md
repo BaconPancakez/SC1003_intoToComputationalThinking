@@ -104,7 +104,7 @@ Prerequisites
 Installation
 
 1. Clone this repository:
-   git clone https://github.com/BaconPancakez/SC1003_intoToComputationalThinking
+   git clone https://github.com/BaconPancakez/SC1003_intoToComputationalThinking <br>
    cd SC1003_intoToComputationalThinking
 
 2. Run the exercises using Python or Jupyter Notebook.
