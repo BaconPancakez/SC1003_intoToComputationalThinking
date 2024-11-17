@@ -1,3 +1,0 @@
-SC1003|School|Coding|pending
-CC0005|School|Report|pending
-Python|Personal|update|completed
